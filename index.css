@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Khojki&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+  font-family: "Noto Sans Khojki";
+    background: #1F2937; 
+    height: 40px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #F9FAF8;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  a {
+    font-size: 22px;
+    /* background: white; */
+    padding: 8px;
+    text-decoration: none;
+    color: #F9FAF8;
+  }
+  .hero{
+    font-family: monospace;
+    height: 400px;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .div1 h2{
+    font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 40px;
+    /* font-weight: 800; */
+    color: #F9FAF8;
+    
+  }
+  .div1 p{
+    font-size: 18px;
+    color: #F9FAF8;
+    
+  }
+  .div1 .anch{
+    font-size: 15px;
+      color: #F9FAF8;
+      border: 2px solid white;
+      border-radius: 7px;
+    }
+  .div2{
+    font-size: 24px;
+    font-weight: 900;
+    color: #F9FAF8;
+  }
+  .infobox{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .infobox .box{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .infobox .boxes{
+    display: flex;
+    justify-content: space-between;
+  }
+  .sq{
+    border: 2px solid #3882F6;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .quotebox{
+    height: 400px;
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quotebox .quote{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    width: 50%;
+  }
+  .quotebox .name{
+    margin-left: 35%;
+  }
+  .buttonbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10%;
+    height: 120px;
+    background-color: #3882F6;
+    border-radius: 10px;
+  }
+  .buttonbox .btntext h2{
+    font-size: 30px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+  }
+  .buttonbox .btntext p{
+    font-size: 15px;
+    font-family: monospace;
+    color: #F9FAF8;
+  }
+  .buttonbox .button{
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  .cr{
+    font-size: 13px;
+    font-family: monospace;
+    height: 100px;
+    color: #E5E7EB;
+    background: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
