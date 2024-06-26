@@ -1,82 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lanidng page</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVAM ENT Centre</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&family=Roboto:wght@700&family=Roboto+Slab:wght@400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="logo">Header Logo</div>
+      <div class="logo">
+        <img
+          class="logopic"
+          height="80px"
+          src="./logo.jpeg"
+          alt="Image Not Loaded"
+        />
+      </div>
       <div class="links">
         <ul>
-            <li><a href="#">header_link1</a></li>
-            <li><a href="#">header_link2</a></li>
-            <li><a href="#">header_link3</a></li>
+          <li class="linkboxes"><a href="#">Home</a></li>
+          <li class="linkboxes"><a href="#">Services</a></li>
+          <li class="linkboxes"><a href="#">About</a></li>
+          <li class="linkboxes"><a href="#">Contact</a></li>
         </ul>
       </div>
     </div>
     <div class="hero">
-        <div class="div1">
-            <h2>This website is awesome</h2>
-            <p>seiruhrfc wbrweh hwcgbf</p>
-            <br/>
-            <a class="anch" href="#">sing up</a>
+      <div class="div1">
+        <h1>Welcome to <br />NAVAM ENT Centre</h1>
+        <div class="text-block">
+          <p>
+            Your health and well-being are our top priority. We provide
+            comprehensive care for all your ENT needs.
+          </p>
         </div>
-        <div class="div2">
-            <img height="250px" src="./pic_landingpg.jpeg" alt="dint load"/>
-        </div>
+        <a class="anch" href="#">Book an Appointment</a>
+      </div>
+      <div class="div2">
+        <img height="250px" src="./pic_landingpg.jpeg" alt="Image Not Loaded" />
+      </div>
     </div>
     <div class="infobox">
-      <h1>some info</h1>
+      <h1 class="infoheader">Our Services</h1>
       <div class="boxes">
         <div class="box">
           <div class="sq">
-            <img height="138px"src="whatheoding.jpeg" alt="pic://">
+            <img height="200px" src="./hear.jpeg" alt="Service 1" />
           </div>
-          <p>heheheeh</p>
+          <p>Comprehensive Hearing Tests</p>
         </div>
         <div class="box">
           <div class="sq">
-            <img height="138px"src="whatheoding.jpeg" alt="pic://">
+            <img height="200px" src="./sinus.jpeg" alt="Service 2" />
           </div>
-          <p>heheheeh</p>
+          <p>Advanced Sinus Treatment</p>
         </div>
         <div class="box">
           <div class="sq">
-            <img height="138px"src="whatheoding.jpeg" alt="pic://">
+            <img height="200px" src="./swal.jpeg" alt="Service 3" />
           </div>
-          <p>heheheeh</p>
+          <p>Voice and Swallowing Disorders</p>
         </div>
         <div class="box">
-          <div class="sq">  
-            <img height="138px"src="whatheoding.jpeg" alt="pic://">
+          <div class="sq">
+            <img height="200px" src="./pediatric.jpeg" alt="Service 4" />
           </div>
-          <p>heheheeh</p>
+          <p>Pediatric ENT Care</p>
         </div>
-        </div>
-    </div>
-    <div class="quotebox">
-      <div class="quote">
-        <h2><i>"cbuhucneyw iumfowjefnwq wndwh iyg ygybguit b vrt ce rd tycerycdrd ybgiti tbytkti tbytit ytbyt7 e56ve65v fbib67  wbdwb iuyq rhuih qhq i."</i></h2>
-      </div>
-      <div class="name">
-        <h3>-Abhinav Raj Warrier</h3>
       </div>
     </div>
-    <div class="buttonbox">
-      <div class="btntext">
-        <h2><b>udifb wb khncjd efcui</b></h2>
-        <p>sign up sign up</p>
+    <div class="storybox">
+      <div class="storytext">
+        <h2>How Dr. Nagamani YS Saved a Patient's Hearing</h2>
+        <p>
+          Dr. Nagamani YS successfully treated a patient who suffered eardrum
+          damage after the recent blast at Rameshawaram Cafe. Watch this video
+          to learn more about her story, through an interview conducted at
+          <b>NAVAM ENT Centre</b>.
+        </p>
       </div>
-      <div class="button">
-        <a href="#">SIGN Up</a>
+      <div class="storyvideo">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/uLRHUOcixsU"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <div class="timingdiv">
+      <div class="buttonbox">
+        <div class="btntext">
+          <h2><b>Experience the Best in ENT Care.</b></h2>
+          <p>Join our family of satisfied patients</p>
+        </div>
+        <div class="button">
+          <button id="viewTimingsButton">View Timings</button>
+        </div>
       </div>
     </div>
     <div class="cr">
-      <h2>Copyright c odin project</h2>
+      <h2>Copyright © NAVAM ENT Centre</h2>
     </div>
-  </body> 
+
+    <!-- Timings Overlay -->
+    <div id="timingsOverlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-button" id="closeOverlay">&times;</span>
+        <h2>Clinic Timings</h2>
+        <br />
+        <p>Monday - Saturday: 6:00 PM - 8:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="index.js"></script>
+  </body>
 </html>

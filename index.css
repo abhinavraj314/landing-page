@@ -1,150 +1,300 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Khojki&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Khojki&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&family=Noto+Sans+Khojki&family=Oswald:wght@200..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
+
 .container {
   font-family: "Noto Sans Khojki";
-    background: #1F2937; 
-    height: 40px;
-    display: flex;
-    align-items: start;
-    justify-content: space-around;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: 900;
-    color: #F9FAF8;
-  }
-  
-  ul {
-    list-style-type: none;
-    display: flex;
-  }
-  
-  a {
-    font-size: 22px;
-    /* background: white; */
-    padding: 8px;
-    text-decoration: none;
-    color: #F9FAF8;
-  }
-  .hero{
-    font-family: monospace;
-    height: 400px;
-    background-color: #1F2937;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .div1 h2{
-    font-family: "Bungee Spice", sans-serif;
+  background: #1f2937;
+  height: 40px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  padding: 2%;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f9faf8;
+}
+
+.logopic {
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+.links ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.links ul li {
+  margin-left: 20px; /* Space out the links equally */
+  padding-top: 2%;
+}
+
+.links ul li:first-child {
+  margin-left: 0; /* Remove left margin from the first item */
+}
+
+.linkboxes {
+  stroke: #000000;
+  stroke-width: 3%;
+}
+
+a {
+  font-size: 22px;
+  padding: 8px;
+  text-decoration: none;
+  color: #f9faf8;
+}
+
+.hero {
+  font-family: monospace;
+  height: 400px;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.div1 {
+  max-width: 400px;
+}
+
+.div1 h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-size: 36px;
+  color: #f9faf8;
+  margin-bottom: 20px;
+}
+
+.div1 .text-block {
+  margin-bottom: 20px;
+}
+
+.div1 h2 {
+  font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
   font-style: normal;
-    font-size: 40px;
-    /* font-weight: 800; */
-    color: #F9FAF8;
-    
-  }
-  .div1 p{
-    font-size: 18px;
-    color: #F9FAF8;
-    
-  }
-  .div1 .anch{
-    font-size: 15px;
-      color: #F9FAF8;
-      border: 2px solid white;
-      border-radius: 7px;
-    }
-  .div2{
-    font-size: 24px;
-    font-weight: 900;
-    color: #F9FAF8;
-  }
-  .infobox{
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-  .infobox .box{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .infobox .boxes{
-    display: flex;
-    justify-content: space-between;
-  }
-  .sq{
-    border: 2px solid #3882F6;
-    border-radius: 10px;
-    height: 150px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .quotebox{
-    height: 400px;
-    background-color: #E5E7EB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .quotebox .quote{
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 18px;
-    width: 50%;
-  }
-  .quotebox .name{
-    margin-left: 35%;
-  }
-  .buttonbox{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10%;
-    height: 120px;
-    background-color: #3882F6;
-    border-radius: 10px;
-  }
-  .buttonbox .btntext h2{
-    font-size: 30px;
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-    "MORF" 15,
-    "SHLN" 50;
-  }
-  .buttonbox .btntext p{
-    font-size: 15px;
-    font-family: monospace;
-    color: #F9FAF8;
-  }
-  .buttonbox .button{
-    border: 2px solid white;
-    border-radius: 10px;
-  }
-  .cr{
-    font-size: 13px;
-    font-family: monospace;
-    height: 100px;
-    color: #E5E7EB;
-    background: #1F2937;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  font-size: 24px;
+  color: #f9faf8;
+}
+
+.div1 p {
+  font-size: 18px;
+  color: #f9faf8;
+}
+
+.div1 .anch {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #f9faf8;
+  border: 2px solid white;
+  border-radius: 7px;
+  display: inline-block;
+  transition: box-shadow 0.3s, transform 0.3s; /* Smooth transition */
+  cursor: pointer;
+}
+
+.div1 .anch:hover {
+  box-shadow: 0 8px 16px rgba(26, 152, 255, 0.2); /* Add shadow on hover */
+  transform: translateY(-2px);
+}
+
+.div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.infobox {
+  height: 500px; /* Increase the height */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 0 50px; /* Add padding to avoid boxes being too close to the sides */
+}
+
+.infoheader {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.infobox .box {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.infobox .boxes {
+  display: flex;
+  justify-content: space-around; /* Ensure space around the boxes */
+  width: 100%;
+}
+
+.sq {
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide overflow to ensure the image is contained within the box */
+}
+
+.sq img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Cover the entire box without stretching */
+}
+
+.buttonbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10%;
+  height: 120px;
+  background-color: #3882f6;
+  border-radius: 10px;
+}
+
+.buttonbox .btntext h2 {
+  font-size: 30px;
+  /* font-family: "Honk", system-ui; */
+  font-optical-sizing: auto;
+  /* font-weight: 400;
+  font-style: normal; */
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+}
+
+.buttonbox .btntext p {
+  font-size: 15px;
+  font-family: monospace;
+  color: #f9faf8;
+}
+
+.buttonbox #viewTimingsButton {
+  font-weight: 550;
+  border: 1px solid white;
+  border-radius: 7px;
+  transition: box-shadow 0.2s, transform 0.2s; /* Smooth transition */
+  cursor: pointer;
+  padding: 3px;
+  padding-inline: 10px;
+  font-size: 100%;
+}
+
+.buttonbox #viewTimingsButton:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.591); /* Add shadow on hover */
+  transform: translateY(-2px);
+}
+
+.cr {
+  font-size: 13px;
+  font-family: monospace;
+  height: 100px;
+  color: #e5e7eb;
+  background: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storybox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #34495e; /* Same color as the quotebox */
+  color: #ecf0f1;
+}
+
+.storytext {
+  max-width: 45%;
+  font-family: "Roboto Slab", serif; /* Different font for the text */
+}
+
+.storytext h2 {
+  padding-bottom: 3%;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.storytext p {
+  font-size: 1.2em;
+  line-height: 1.5; /* Ensure text is compact */
+}
+
+.storyvideo {
+  flex: 1.2;
+  max-width: 50%;
+}
+
+.storyvideo iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+}
+
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+  opacity: 0; /* Initially set opacity to 0 */
+}
+
+.overlay-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px; /* Rounded corners */
+  width: 80%; /* Could be more or less, depending on screen size */
+  position: relative; /* For positioning the close button */
+  font-family: "Roboto", sans-serif; /* Change font */
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
